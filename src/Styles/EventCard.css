@@ -1,0 +1,74 @@
+.event-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #D3D3D3;
+  border-radius: 20px;
+  margin: 10px 0;
+  background-color: #dde8fb;
+  width: 300px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.character-container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-right: 15px;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.btn {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: rgb(3, 3, 3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-btn {
+  background-color: #d7e6d6;
+  border: 1px solid #b5cab0;
+}
+
+.remove-btn {
+  background-color: #f2cfcd;
+  border: 1px solid #bc9494;
+}
+
+.select-btn:hover {
+  background-color: #b5cab0;
+}
+
+.remove-btn:hover {
+  background-color: #bc9494;
+}
+
+.details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider {
+  width: 2px;
+  background-color: #040404;
+  height: 100%;
+  margin: 0 15px;
+}
+
+.event-card.disabled {
+  background-color: #c4c4c4;
+  pointer-events: none;
+}
+
+.select-btn:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}

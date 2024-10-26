@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+/*
+  .padding-top {
+    min-height: 20vh;
+  }*/
+
+.log-in-form {
+  padding: 20vh 0;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  min-width: 420px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #D3D3D3;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 80%;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.form-body .form-input {
+  display: flex;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border: 0.5px solid #D3D3D3;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-body .form-input i {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.form-body .form-input input {
+  width: 95%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.form-body .form-input input::placeholder {
+  font-size: 1.5rem;
+}
+
+.form-body .form-input input:focus {
+  outline: none;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: forestgreen;
+}
+
+.button {
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.form-btn {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 0.5px solid #D3D3D3;
+  background: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button input:focus {
+  outline: none;
+}
+
+.form-btn:hover {
+  color: black;
+  background: #fff;
+}
+
+.sign-up-link {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.sign-up-link a {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.sign-up-link a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+  .form-container {
+    width: 70%;
+  }
+
+  .form-body form-input input {
+    font-size: 1.1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .form-btn {
+    font-size: 1.1rem;
+  }
+
+  .sign-up-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:570px) {
+  .form-container {
+    width: 70%;
+  }
+
+  .form-body form-input input,
+  .form-body form-input input::placeholder {
+    font-size: 0.5rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+  }
+
+  .form-btn {
+    font-size: 1.1rem;
+  }
+
+  .sign-up-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .form-container {
+    min-width: 50%;
+  }
+
+  .form-body form-input input,
+  .form-body form-input input::placeholder {
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .form-btn {
+    font-size: 1rem;
+  }
+
+  .sign-up-link {
+    font-size: 1rem;
+  }
+}
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+  animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+
+  25% {
+    stroke: #DE3E35;
+  }
+
+  50% {
+    stroke: #F7C223;
+  }
+
+  75% {
+    stroke: #1B9A59;
+  }
+
+  100% {
+    stroke: #4285F4;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+
+  25% {
+    stroke: #DE3E35;
+  }
+
+  50% {
+    stroke: #F7C223;
+  }
+
+  75% {
+    stroke: #1B9A59;
+  }
+
+  100% {
+    stroke: #4285F4;
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+.spinner-div {
+  align-self: center;
+}
