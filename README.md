@@ -1,3 +1,8 @@
+# Project Details
+
+![Mock UI](images/sports_day_mock_UI.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
